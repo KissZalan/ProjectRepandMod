@@ -7,7 +7,7 @@ body {
 }
 
 .bg-overlay {
-    background-image: url('/mnt/data/background.jpg');
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
