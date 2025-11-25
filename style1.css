@@ -51,12 +51,12 @@ main {
 }
 
 a {
-    background-color: #ff9800;
+    background-color: #2a7ae2;
     border-radius: 6px;
     transition: 0.3s ease;
 }
 a:hover {
-    background-color: #e58900;
+    background-color: #1a5ac9;
     transform: translateY(-2px);
 }
 
