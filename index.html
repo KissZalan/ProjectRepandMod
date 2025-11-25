@@ -3,41 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A basic HTML page">
+  <meta name="description" content="A modern travel guide">
   <title>Main Page</title>
   <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 
+  <div class="bg-overlay"></div>
+
   <header>
     <h1>Travel Guide</h1>
-    <h2>A user-friendly hub, dedicated to helping you find your next holiday.</h2>
+    <h2>Your next adventure starts here.</h2>
   </header>
 
   <main>
     <section id="home">
       <h2>Home</h2>
-      <p>This is the main page for this travel guide, below are outlined 3 of the locations that you can visit, along with details regarding flights, sights, and other amenities.</p>
-      <a href="Budapest.html">Learn more about Budapest</a>
-      <a href="EdinburghTravelGuide.html">Learn more about Edinburgh</a>
+      <p>Discover destinations, flight insights and local tips – all in one place.</p>
+      <a href="Budapest.html">Explore Budapest</a>
+      <a href="EdinburghTravelGuide.html">Explore Edinburgh</a>
     </section>
 
     <section id="airport-guide">
-      <p>For more information about travelling specifically from Ireland, please watch the video listed below.</p>
+      <p>Travelling from Ireland? This video will walk you through airport essentials.</p>
       <div id="div1">
-        Here is a helpful guide to navigating a typical European airport:<br>
-        <img src= "passport.jpg" alt= "passport" width = "300">
+        <img src="passport.jpg" alt="passport" width="300">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-xunTyB2_3g" 
-                title="How to Navigate the Airport Your FIRST Time (Full Walkthrough)" 
-                frameborder="0" allowfullscreen></iframe>
+                title="Airport Guide" allowfullscreen></iframe>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; Main Webpage</p>
+    <p>&copy; Travel Guide</p>
   </footer>
 
-  <script src="script1.js"></script>
+  <script>
+    const bg = document.querySelector('.bg-overlay');
+    window.addEventListener('scroll', () => {
+      const scrolled = Math.min(window.scrollY / 600, 0.5);
+      bg.style.opacity = scrolled;
+    });
+  </script>
+
 </body>
 </html>
