@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A modern travel guide">
   <title>Main Page</title>
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="stylesheets/style1.css">
 </head>
 <body>
 
@@ -22,12 +22,13 @@
       <p>Discover destinations, flight insights and local tips – all in one place.</p>
       <a href="Budapest2.html">Explore Budapest</a>
       <a href="EdinburghTravelGuide.html">Explore Edinburgh</a>
+      <a href="Split.html">Explore Split</a>
     </section>
 
     <section id="airport-guide">
       <p>Travelling from Ireland? This video will walk you through airport essentials.</p>
       <div id="div1">
-        <img src="passport.jpg" alt="passport" width="300">
+        <img src="images/passport.jpg" alt="passport" width="300">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-xunTyB2_3g" 
                 title="Airport Guide" allowfullscreen></iframe>
       </div>
@@ -41,7 +42,7 @@
   <script>
     const bg = document.querySelector('.bg-overlay');
     window.addEventListener('scroll', () => {
-      const scrolled = 1 Math.min(window.scrollY / 1800, 1);
+      const scrolled = 1;Math.min(window.scrollY / 1800, 1);
       bg.style.opacity = scrolled;
     });
   </script>
