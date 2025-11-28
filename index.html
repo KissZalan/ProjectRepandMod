@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A modern travel guide">
-  <title>Main Page</title>
-  <link rel="stylesheet" href="style1.css">
+  <title>Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="bg-overlay"></div>
 
   <header>
-    <h1>Travel Guide</h1>
-    <h2>Your next adventure starts here.</h2>
+    <div class="header-content">
+      <h1>Travel Guide</h1>
+      <h2>Your next adventure starts here.</h2>
+    </div>
   </header>
 
   <main>
-    <section id="home">
+    <section id="home" class="section-card">
       <h2>Home</h2>
-      <p>Discover destinations, flight insights and local tips – all in one place.</p>
+      <p>Discover destinations, flight insights, and local tips – all in one place.</p>
 
       <div class="button-group">
         <a href="Budapest2.html">Explore Budapest</a>
@@ -28,7 +31,7 @@
       </div>
     </section>
 
-    <section id="airport-guide">
+    <section id="airport-guide" class="section-card">
       <h2>Airport Guide</h2>
       <p>Travelling from Ireland? This video will walk you through airport essentials.</p>
 
@@ -45,7 +48,7 @@
       </div>
     </section>
 
-    <section id="screen-reader">
+    <section id="screen-reader" class="section-card">
       <h2>Screen Reader</h2>
       <button id="read-page-btn">Read This Page</button>
     </section>
@@ -53,7 +56,6 @@
   </main>
 
   <footer>
-    <p>&copy; Travel Guide</p>
   </footer>
 
   <script src="script.js"></script>
